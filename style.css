@@ -21,8 +21,9 @@
     flex: 1;
 }
 .saluteImg{
-    width: 40vw;
-    height: 50vh;
+    height: 100vh;
+    border: solid 1px transparent;
+    border-radius: 50%;
 }
 .saluteText{
     color: #333;
@@ -37,21 +38,23 @@
     color: #333;
     cursor: default;
     text-align: center;
-    line-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .jobTitleContainer{
     height: 100vh;
 }
 .dark{
-    background: url("./img/dark.webp");
+    background: url("./img/dark2.jpg");
 }
 .purple{
-    background: rebeccapurple url("./img/dark.webp");
+    background: rebeccapurple url("./img/dark.jpg");
 }
 .jobTitle{
     font-size: 10vw;
     color: #333;
-    line-height: 40vh;
+    line-height: 100vh;
     cursor: default;
 }
 .projects{
@@ -78,7 +81,7 @@
 .phone{
     flex: 1;
     width: 300px;
-    height: 600px;
+    height: 550px;
     position: relative;
 }
 .phoneScreen{
@@ -135,6 +138,7 @@ position: relative;
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    color: #555;
 }
 .projectButton::after{
    content: "View Demo"; 
@@ -163,6 +167,10 @@ position: relative;
 }
 .githubTitle{
     font-size: 5vw;
+    color: #333;
+}
+.githubTitle a{
+    text-decoration: none;
     color: #333;
 }
 .githubChart{
